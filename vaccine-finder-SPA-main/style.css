@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.header{
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+  }
+  .header .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .menu .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+#content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    min-height: 90%;
+    background-color: #dedede;
+}
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter div {
+    padding: 20px;
+}
+.filter button {
+    height: 45px;
+    width: 125px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+    color: black;
+}
+
+.filter select {
+    height: 45px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+    color: black;
+}
+
+#noSearchResults, #searchResults {
+  display: flex;
+  justify-content: center;
+}
+
+.m-10 {
+  margin: 10px;
+  width: 30% !important;
+}
+.center {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #b8a5dd;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.c-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.c-address {
+  color: grey;
+}
+.dose-info {
+  border: 1px solid #b8a5dd;
+    text-align: center;
+    border-radius: 5px;
+}
+.vac-1 {
+  border-right: 1px solid #b8a5dd;
+}
+.b-top {
+  border-top: 1px solid #b8a5dd;
+}
+
+.b-right {
+  border-right: 1px solid #b8a5dd;
+}

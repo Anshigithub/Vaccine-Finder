@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vaccine Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">Vaccine Finder</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="filter">
+                <div id="state-div">
+                    <select name="state" id="state" onchange="getDistrict(value)">
+                        <option hidden>Select your State</option>
+                    </select>
+                </div>
+                <div id="distict-div">
+                    <select name="districts" id="districts">
+                        <option hidden>Select your District</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" onclick="getSlots()">Search</button>
+                </div>
+            </div>
+            <div id="searchResults" style="display: none;">
+                <h2>Search Results for slot</h2>
+            </div>
+            <div class="container">
+                <div class="row" id="slot-content">
+                </div>
+            </div>
+
+            <div id="noSearchResults" style="display: none;">
+                <h2>No Vaccination Slots available</h2>
+            </div>
+        </div>
+    </div>
+</body>
